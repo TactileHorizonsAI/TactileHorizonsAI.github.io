@@ -6,13 +6,14 @@
   <title>Tactile Horizons AI – Touch the Future</title>
   <meta name="description" content="AI-powered tactile graphics for the visually impaired. Bridging the visual information gap through touch." />
   <style>
-    /* Modern, clean, accessible-first design */
     :root {
       --primary: #2c3e50;
-      --accent: #3498db;
-      --light: #ecf0f1;
-      --dark: #1a1a1a;
-      --text: #333;
+      --secondary: #3498db;
+      --accent: #e74c3c;
+      --light: #f9f9f9;
+      --success: #2ecc71;
+      --text: #2c3e50;
+      --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
     }
     * {
       margin: 0;
@@ -20,16 +21,25 @@
       box-sizing: border-box;
     }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
+      font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+      line-height: 1.7;
       color: var(--text);
-      background-color: #fff;
+      background: var(--bg-gradient);
     }
     header {
       background: var(--primary);
       color: white;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Ccircle cx='20' cy='20' r='4' fill='rgba(255,255,255,0.1)'/%3E%3Ccircle cx='50' cy='30' r='4' fill='rgba(255,255,255,0.1)'/%3E%3Ccircle cx='80' cy='20' r='4' fill='rgba(255,255,255,0.1)'/%3E%3Ccircle cx='30' cy='60' r='4' fill='rgba(255,255,255,0.1)'/%3E%3Ccircle cx='70' cy='70' r='4' fill='rgba(255,255,255,0.1)'/%3E%3C/svg%3E");
+      opacity: 0.3;
     }
     .container {
       max-width: 1200px;
@@ -37,23 +47,34 @@
       padding: 0 1.5rem;
     }
     section {
-      padding: 3rem 0;
+      padding: 3.5rem 0;
+      background: white;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
     }
     h1, h2, h3 {
       margin-bottom: 1rem;
       color: var(--primary);
     }
+    h1 {
+      font-size: 2.8rem;
+    }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       color: white;
+      position: relative;
+      z-index: 2;
     }
     p {
       margin-bottom: 1.25rem;
+      font-size: 1.05rem;
     }
     .highlight {
-      background-color: var(--light);
+      background: #e3f2fd;
       padding: 1.5rem;
-      border-left: 4px solid var(--accent);
+      border-left: 5px solid var(--secondary);
+      border-radius: 0 8px 8px 0;
       margin: 1.5rem 0;
     }
     .stats {
@@ -63,45 +84,62 @@
       margin: 2rem 0;
     }
     .stat-box {
-      background: var(--light);
-      padding: 1.25rem;
-      border-radius: 8px;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
       flex: 1;
       min-width: 200px;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
+      border: 1px solid #e0f7fa;
     }
     .stat-box h3 {
-      font-size: 2rem;
+      font-size: 2.2rem;
       margin-bottom: 0.5rem;
-      color: var(--accent);
+      color: var(--secondary);
     }
     ul {
-      padding-left: 1.5rem;
+      padding-left: 1.8rem;
       margin: 1rem 0;
     }
+    li {
+      margin-bottom: 0.6rem;
+    }
     footer {
-      background: var(--dark);
+      background: var(--primary);
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
+      margin-top: 2rem;
     }
-    .contact {
-      margin-top: 1.5rem;
+    .contact a {
+      color: #bbdefb;
     }
-    a {
-      color: var(--accent);
-      text-decoration: none;
+    .illustration-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin: 2.5rem 0;
     }
-    a:hover {
-      text-decoration: underline;
+    .illustration-card {
+      flex: 1;
+      min-width: 220px;
+      text-align: center;
+      padding: 1.25rem;
+      background: #f0f8ff;
+      border-radius: 12px;
     }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .stat-box h3 {
-        font-size: 1.5rem;
-      }
+    .illustration-card svg {
+      height: 100px;
+      margin-bottom: 1rem;
+    }
+    .illustration-card.braille svg { fill: var(--secondary); }
+    .illustration-card.school svg { fill: var(--accent); }
+    .illustration-card.library svg { fill: var(--success); }
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      header h1 { font-size: 2.4rem; }
     }
   </style>
 </head>
@@ -110,39 +148,77 @@
   <header>
     <div class="container">
       <h1>Touch the Future</h1>
-      <p><strong>Tactile Horizons AI</strong> — Revolutionizing accessibility for the visually impaired</p>
+      <p><strong>Tactile Horizons AI</strong> — AI-powered tactile graphics for the visually impaired</p>
     </div>
   </header>
 
   <main class="container">
     <section>
       <h2>The Problem</h2>
-      <p>Imagine being excluded from charts, images, and essential visual learning. This is the daily reality for over <strong>250 million people with vision loss</strong>.</p>
+      <p>Imagine being excluded from charts, images, and essential learning. This is the daily reality for over <strong>250 million people with vision loss</strong>.</p>
       <div class="highlight">
-        <p>Financial charts, educational diagrams, informative images — all inaccessible, creating a massive social and economic divide.</p>
+        <p>Financial charts, educational diagrams, informative images—all inaccessible—creating a massive social and economic divide.</p>
+      </div>
+
+      <div class="illustration-grid">
+        <div class="illustration-card braille">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Simple Braille cell pattern -->
+            <circle cx="20" cy="20" r="8"/>
+            <circle cx="20" cy="40" r="8"/>
+            <circle cx="20" cy="60" r="8"/>
+            <circle cx="50" cy="20" r="8"/>
+            <circle cx="50" cy="40" r="8"/>
+            <circle cx="50" cy="60" r="8"/>
+          </svg>
+          <h3>Braille</h3>
+          <p>The foundation of tactile reading</p>
+        </div>
+        <div class="illustration-card school">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Simple school icon -->
+            <rect x="20" y="40" width="60" height="40" rx="4"/>
+            <polygon points="20,40 50,20 80,40"/>
+            <rect x="42" y="60" width="16" height="20"/>
+          </svg>
+          <h3>Schools</h3>
+          <p>Where inclusion begins</p>
+        </div>
+        <div class="illustration-card library">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Simple library/bookshelf icon -->
+            <rect x="15" y="30" width="70" height="10" rx="3"/>
+            <rect x="15" y="50" width="70" height="10" rx="3"/>
+            <rect x="15" y="70" width="70" height="10" rx="3"/>
+            <rect x="10" y="25" width="10" height="55" rx="2"/>
+            <rect x="80" y="25" width="10" height="55" rx="2"/>
+          </svg>
+          <h3>Libraries</h3>
+          <p>Centers of accessible knowledge</p>
+        </div>
       </div>
     </section>
 
     <section>
       <h2>Our Solution</h2>
-      <p>We are developing AI that bridges the gap between visual data and non-visual interpretation by converting digital images into <strong>tactile graphics</strong> — touchable reliefs with variable-height embossing.</p>
+      <p>We’re developing AI that bridges the gap between visual data and non-visual interpretation by converting digital images into <strong>tactile graphics</strong> with variable-height embossing.</p>
 
       <div class="stats">
         <div class="stat-box">
           <h3>250M</h3>
-          <p>People with vision loss worldwide</p>
+          <p>People with vision loss</p>
         </div>
         <div class="stat-box">
           <h3>$2B</h3>
-          <p>Global braille & tactile media market</p>
+          <p>Braille & tactile media market</p>
         </div>
       </div>
 
       <h3>How It Works</h3>
       <ul>
-        <li><strong>AI Interpretation:</strong> Analyzes patterns, shapes, and data trends in images.</li>
-        <li><strong>Intelligent Simplification:</strong> Removes clutter while preserving core meaning.</li>
-        <li><strong>Tactile Rendering:</strong> Outputs variable-height embossed graphics readable by touch — like Braille, but for complex visuals.</li>
+        <li><strong>AI Interpretation:</strong> Analyzes patterns, shapes, and data trends.</li>
+        <li><strong>Intelligent Simplification:</strong> Removes clutter while preserving meaning.</li>
+        <li><strong>Tactile Rendering:</strong> Outputs variable-height embossed graphics readable by touch—like a relief.</li>
       </ul>
     </section>
 
@@ -150,25 +226,25 @@
       <h2>Impact</h2>
       <ul>
         <li><strong>Higher STEM Enrollment:</strong> Empowers blind students in science and math.</li>
-        <li><strong>Increased Workplace Literacy:</strong> Professionals can interpret charts and graphs independently.</li>
-        <li><strong>Reduced Public Costs:</strong> Lowers government spending on alternate-format materials.</li>
+        <li><strong>Increased Workplace Literacy:</strong> Professionals interpret charts independently.</li>
+        <li><strong>Reduced Public Costs:</strong> Lowers government spending on alternate formats.</li>
       </ul>
     </section>
 
     <section>
       <h2>Our Vision</h2>
-      <p>Deploy an AI-powered web application <strong>and</strong> publish a monthly printed magazine in Braille + tactile graphics — featuring educational, financial, and entertaining content written <strong>by and for</strong> people with vision disabilities.</p>
-      <p>Championing 250 million voices — from their perspective.</p>
+      <p>Launch an AI-powered web app <strong>and</strong> a monthly printed magazine in Braille + tactile graphics—featuring educational, financial, and entertaining content <strong>written by and for</strong> people with vision disabilities.</p>
+      <p><strong>Championing 250 million voices—from their perspective.</strong></p>
     </section>
 
     <section>
       <h2>Business Model</h2>
       <ul>
-        <li><strong>Magazine Subscriptions:</strong> Yearly institutional sales to ~300,000 schools/libraries (70% gross margin).</li>
-        <li><strong>Licensing:</strong> SaaS model — license our AI engine to publishers per page.</li>
+        <li><strong>Magazine Subscriptions:</strong> Yearly sales to ~300,000 schools/libraries (70% gross margin).</li>
+        <li><strong>Licensing:</strong> SaaS model—license our AI engine per page to publishers.</li>
       </ul>
       <p><strong>Funding Ask:</strong> $225K to launch cloud app + embosser hardware, reach break-even in Year 2.</p>
-      <p>Projected 55% EBITDA within three years. No direct competitors. Premium value.</p>
+      <p>Projected 55% EBITDA within 3 years. No direct competitors. Premium value.</p>
     </section>
   </main>
 
