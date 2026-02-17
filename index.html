@@ -3,950 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tactile Horizons AI - STEM Accessibility for Blind & Low-Vision Learners</title>
-    <meta name="description" content="AI-powered tactile graphics generation for STEM education. Transform visual content into accessible formats in 90 seconds.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Tactile Horizons AI | STEM Accessibility</title>
+    <meta name="description" content="AI-Powered STEM Accessibility for Blind & Low-Vision Learners. Transforming visual content into optimized tactile graphics in 90 seconds.">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #1a252f;
+            --text: #333;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: var(--dark);
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem 0;
+        }
+        h1, h2, h3 {
+            color: var(--primary);
+        }
+        header h1 {
+            color: var(--white);
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .stat-box {
+            text-align: center;
+            padding: 1rem;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        .braille {
+            font-family: monospace;
+            letter-spacing: 2px;
+            opacity: 0.7;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Skip Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="container nav-container">
-            <a href="#" class="logo" aria-label="Tactile Horizons AI Home">
-                <span class="braille-text" aria-hidden="true">⠞⠁⠉⠞⠊⠇⠑</span>
-                <span class="logo-text">Tactile Horizons AI</span>
-            </a>
-            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="hamburger"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#problem">Problem</a></li>
-                <li><a href="#solution">Solution</a></li>
-                <li><a href="#market">Market</a></li>
-                <li><a href="#traction">Traction</a></li>
-                <li><a href="#investment">Investment</a></li>
-                <li><a href="#contact" class="btn btn-nav">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
+<header>
+    <div class="container">
+        <h1>Tactile Horizons AI</h1>
+        <p class="braille">⠞   ⠁   ⠉   ⠞   ⠊   ⠇   ⠑   ⠓   ⠕   ⠗   ⠊   ⠵   ⠕   ⠝   ⠎   ⠁   ⠊</p>
+        <p>AI-Powered STEM Accessibility for Blind & Low-Vision Learners</p>
+        <a href="mailto:Jallad.ibrahim@proton.me" class="btn">Contact Us</a>
+    </div>
+</header>
 
-    <main id="main-content">
-        <!-- Hero Section -->
-        <header class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="braille-display" aria-hidden="true">
-                        <span>⠞ ⠁ ⠉ ⠞ ⠊ ⠇ ⠑   ⠓ ⠕ ⠗ ⠊ ⠵ ⠕ ⠝ ⠎   ⠁ ⠊</span>
-                    </div>
-                    <h1>AI-Powered STEM Accessibility for Blind & Low-Vision Learners</h1>
-                    <p class="hero-subtitle">Transform visual STEM content into optimized tactile graphics in <strong>90 seconds</strong>, compared to 2-4 weeks for manual production.</p>
-                    <p class="hero-tagline">The API-first layer that makes digital learning platforms instantly accessible.</p>
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">Get Started</a>
-                        <a href="#solution" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="tactile-demo" aria-hidden="true">
-                        <div class="demo-card">
-                            <div class="demo-label">Visual Input</div>
-                            <svg viewBox="0 0 200 150" class="demo-chart">
-                                <polyline points="10,120 50,80 90,100 130,40 170,60" fill="none" stroke="#1e40af" stroke-width="3"/>
-                                <circle cx="10" cy="120" r="5" fill="#1e40af"/>
-                                <circle cx="50" cy="80" r="5" fill="#1e40af"/>
-                                <circle cx="90" cy="100" r="5" fill="#1e40af"/>
-                                <circle cx="130" cy="40" r="5" fill="#1e40af"/>
-                                <circle cx="170" cy="60" r="5" fill="#1e40af"/>
-                            </svg>
-                        </div>
-                        <div class="demo-arrow">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                            <span class="demo-time">90s</span>
-                        </div>
-                        <div class="demo-card tactile">
-                            <div class="demo-label">Tactile Output</div>
-                            <div class="tactile-pattern">
-                                <div class="dot-row">
-                                    <span class="dot"></span><span class="dot"></span><span class="dot raised"></span><span class="dot"></span><span class="dot"></span>
-                                </div>
-                                <div class="dot-row">
-                                    <span class="dot"></span><span class="dot raised"></span><span class="dot"></span><span class="dot raised"></span><span class="dot"></span>
-                                </div>
-                                <div class="dot-row">
-                                    <span class="dot raised"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot raised"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="container">
+    <!-- Mission Section -->
+    <section class="section">
+        <h2>The Proposition</h2>
+        <p>Tactile Horizons AI transforms visual STEM content—graphs, molecular structures, geometric diagrams—into optimized tactile graphics in <strong>90 seconds</strong>, compared to 2-4 weeks for manual production. We are the API-first layer that makes digital learning platforms instantly accessible.</p>
+        <p><strong>Our Vision:</strong> Become the infrastructure layer for accessible STEM content. The API every LMS, publisher, and government portal uses to make visual information accessible.</p>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section">
+        <h2>The Problem</h2>
+        <div class="grid">
+            <div class="card stat-box">
+                <div class="stat-number">1.3 Billion</div>
+                <p>People live with vision impairment globally (WHO)</p>
             </div>
-        </header>
-
-        <!-- Problem Section -->
-        <section id="problem" class="section">
-            <div class="container">
-                <h2 class="section-title">The Problem</h2>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">1.3B</div>
-                        <div class="stat-label">People with vision impairment globally</div>
-                        <div class="stat-source">Source: WHO</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">90%</div>
-                        <div class="stat-label">of STEM content is visual</div>
-                        <div class="stat-source">Source: Education research</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">$11K</div>
-                        <div class="stat-label">More annual earnings for Braille readers</div>
-                        <div class="stat-source">Source: NFB Employment Survey</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">2-4 wks</div>
-                        <div class="stat-label">Current tactile graphics turnaround</div>
-                        <div class="stat-source">$50-$200 per image</div>
-                    </div>
-                </div>
-                <div class="highlight-box">
-                    <div class="highlight-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
-                        </svg>
-                    </div>
-                    <div class="highlight-content">
-                        <h3>Regulatory Deadline</h3>
-                        <p><strong>ADA Title II mandates WCAG 2.1 AA compliance by April 2026.</strong> Schools and publishers face regulatory deadlines without scalable solutions. Manual production cannot meet demand. <em>AI can.</em></p>
-                    </div>
-                </div>
+            <div class="card stat-box">
+                <div class="stat-number">90%</div>
+                <p>Of STEM content is visual (charts, diagrams, data)</p>
             </div>
-        </section>
-
-        <!-- Solution Section -->
-        <section id="solution" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title">The Solution</h2>
-                <p class="section-intro">Three-Step Automation</p>
-                <div class="solution-steps">
-                    <div class="step-card">
-                        <div class="step-number">1</div>
-                        <h3>AI Interpretation</h3>
-                        <p>Computer vision isolates STEM-relevant features using fine-tuned multimodal models</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">2</div>
-                        <h3>Intelligent Simplification</h3>
-                        <p>Removes visual clutter while preserving semantic meaning <strong>(80% accuracy for standard charts)</strong></p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">3</div>
-                        <h3>Tactile Optimization</h3>
-                        <p>Outputs variable-height emboss files calibrated for fingertip discrimination</p>
-                    </div>
-                </div>
-                <div class="delivery-info">
-                    <h3>Delivery</h3>
-                    <p><strong>Cloud API + SaaS Dashboard.</strong> We integrate with existing Learning Management Systems (Canvas, Blackboard) and embosser hardware (ViewPlus, Index).</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Market Section -->
-        <section id="market" class="section">
-            <div class="container">
-                <h2 class="section-title">Market Opportunity</h2>
-                <div class="market-chart">
-                    <div class="market-layer tam">
-                        <div class="market-label">TAM</div>
-                        <div class="market-value">$3.91B</div>
-                        <div class="market-desc">Assistive Technology (Visual Impairment) - 2024</div>
-                    </div>
-                    <div class="market-layer sam">
-                        <div class="market-label">SAM</div>
-                        <div class="market-value">$600M</div>
-                        <div class="market-desc">Education Tactile Graphics - 2026-2027</div>
-                    </div>
-                    <div class="market-layer som">
-                        <div class="market-label">SOM</div>
-                        <div class="market-value">$30M</div>
-                        <div class="market-desc">5% Market Capture - Year 3</div>
-                    </div>
-                </div>
-                <div class="catalysts">
-                    <h3>Growth Catalysts</h3>
-                    <div class="catalyst-grid">
-                        <div class="catalyst-item">
-                            <div class="catalyst-icon regulatory"></div>
-                            <h4>Regulatory</h4>
-                            <p>ADA compliance deadlines create 2026-2027 procurement urgency</p>
-                        </div>
-                        <div class="catalyst-item">
-                            <div class="catalyst-icon funding"></div>
-                            <h4>Funding</h4>
-                            <p>IDEA federal grants provide $14.2B annually for special education</p>
-                        </div>
-                        <div class="catalyst-item">
-                            <div class="catalyst-icon technical"></div>
-                            <h4>Technical</h4>
-                            <p>AI multimodal models now production-ready for accessibility applications</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Business Model Section -->
-        <section id="business" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title">Business Model</h2>
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h3>API Pay-per-Use</h3>
-                            <div class="price">$0.15<span>/page</span></div>
-                        </div>
-                        <div class="pricing-margin">85% margin</div>
-                    </div>
-                    <div class="pricing-card featured">
-                        <div class="pricing-header">
-                            <h3>Institutional License</h3>
-                            <div class="price">$2,999<span>/year</span></div>
-                        </div>
-                        <div class="pricing-feature">Unlimited usage</div>
-                        <div class="pricing-margin">90% margin</div>
-                    </div>
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h3>Professional Services</h3>
-                            <div class="price">Custom</div>
-                        </div>
-                        <div class="pricing-feature">Setup & Training</div>
-                        <div class="pricing-margin">60% margin</div>
-                    </div>
-                </div>
-                <div class="customers-section">
-                    <h3>Target Customers</h3>
-                    <div class="customer-tags">
-                        <span class="tag">K-12 School Districts</span>
-                        <span class="tag">Vocational Rehabilitation Agencies</span>
-                        <span class="tag">Higher Education Institutions</span>
-                        <span class="tag">Educational Publishers</span>
-                    </div>
-                </div>
-                <div class="unit-economics">
-                    <h3>Unit Economics</h3>
-                    <div class="economics-grid">
-                        <div class="econ-item">
-                            <div class="econ-label">CAC</div>
-                            <div class="econ-value">$2,500</div>
-                            <div class="econ-note">B2B education sales cycle</div>
-                        </div>
-                        <div class="econ-item">
-                            <div class="econ-label">LTV</div>
-                            <div class="econ-value">$8,997</div>
-                            <div class="econ-note">3-year retention</div>
-                        </div>
-                        <div class="econ-item highlight">
-                            <div class="econ-label">LTV:CAC</div>
-                            <div class="econ-value">3.6:1</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Traction Section -->
-        <section id="traction" class="section">
-            <div class="container">
-                <h2 class="section-title">Traction</h2>
-                <div class="traction-grid">
-                    <div class="traction-card">
-                        <div class="traction-number">3</div>
-                        <div class="traction-label">Ontario school districts</div>
-                        <div class="traction-detail">Signed Letters of Intent</div>
-                    </div>
-                    <div class="traction-card">
-                        <div class="traction-number">150</div>
-                        <div class="traction-label">Students impacted</div>
-                        <div class="traction-detail">In pilot phase</div>
-                    </div>
-                    <div class="traction-card">
-                        <div class="traction-number">2,500</div>
-                        <div class="traction-label">Images processed</div>
-                        <div class="traction-detail">In beta testing</div>
-                    </div>
-                    <div class="traction-card highlight">
-                        <div class="traction-number">76.6%</div>
-                        <div class="traction-label">Comprehension rate</div>
-                        <div class="traction-detail">vs. 70.1% verbal-only (validated)</div>
-                    </div>
-                </div>
-                <div class="advisory-note">
-                    <p><strong>Advisory commitments</strong> from accessibility researchers and former industry executives</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Competitive Section -->
-        <section id="competitive" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title">Competitive Positioning</h2>
-                <div class="comparison-table-wrapper">
-                    <table class="comparison-table" role="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Competitor</th>
-                                <th scope="col">Their Model</th>
-                                <th scope="col">Our Differentiation</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>ViewPlus (Tiger Software)</strong></td>
-                                <td>$195-$595/year embossing software</td>
-                                <td class="our-diff">We add AI preprocessing they lack</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Manual Tactile Artists</strong></td>
-                                <td>$50-$200/image, 2-4 weeks</td>
-                                <td class="our-diff">We deliver in 90 seconds at $5/image</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Orbit Research (Graphiti)</strong></td>
-                                <td>$30K refreshable hardware</td>
-                                <td class="our-diff">We target the $3K embosser market</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="moat-box">
-                    <h3>Strategic Moat</h3>
-                    <p>Domain-specific training datasets from pilot partnerships; <strong>first-mover in AI-powered STEM accessibility</strong>.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Financial Roadmap -->
-        <section id="financials" class="section">
-            <div class="container">
-                <h2 class="section-title">Financial Roadmap</h2>
-                <div class="roadmap">
-                    <div class="roadmap-item">
-                        <div class="roadmap-year">2026</div>
-                        <div class="roadmap-content">
-                            <div class="roadmap-revenue">$85K</div>
-                            <div class="roadmap-milestone">3 paid pilots, MVP launch</div>
-                        </div>
-                    </div>
-                    <div class="roadmap-item">
-                        <div class="roadmap-year">2027</div>
-                        <div class="roadmap-content">
-                            <div class="roadmap-revenue">$320K</div>
-                            <div class="roadmap-milestone">20 institutional customers, US expansion</div>
-                        </div>
-                    </div>
-                    <div class="roadmap-item">
-                        <div class="roadmap-year">2028</div>
-                        <div class="roadmap-content">
-                            <div class="roadmap-revenue">$850K</div>
-                            <div class="roadmap-milestone">Break-even, publisher API integrations</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Investment Section -->
-        <section id="investment" class="section section-dark">
-            <div class="container">
-                <h2 class="section-title">Investment Ask</h2>
-                <div class="investment-hero">
-                    <div class="investment-amount">
-                        <div class="amount-label">Seed Round</div>
-                        <div class="amount-value">$500K</div>
-                        <div class="amount-terms">on $2M pre-money SAFE</div>
-                    </div>
-                </div>
-                <div class="funds-allocation">
-                    <h3>Use of Funds</h3>
-                    <div class="allocation-chart">
-                        <div class="allocation-item" style="--width: 36%">
-                            <div class="allocation-bar"></div>
-                            <div class="allocation-label">AI/ML Engineer</div>
-                            <div class="allocation-value">$180K</div>
-                        </div>
-                        <div class="allocation-item" style="--width: 24%">
-                            <div class="allocation-bar"></div>
-                            <div class="allocation-label">Sales & Partnerships</div>
-                            <div class="allocation-value">$120K</div>
-                        </div>
-                        <div class="allocation-item" style="--width: 16%">
-                            <div class="allocation-bar"></div>
-                            <div class="allocation-label">Operations & Legal</div>
-                            <div class="allocation-value">$80K</div>
-                        </div>
-                        <div class="allocation-item" style="--width: 12%">
-                            <div class="allocation-bar"></div>
-                            <div class="allocation-label">Infrastructure</div>
-                            <div class="allocation-value">$60K</div>
-                        </div>
-                        <div class="allocation-item" style="--width: 12%">
-                            <div class="allocation-bar"></div>
-                            <div class="allocation-label">Reserve</div>
-                            <div class="allocation-value">$60K</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="runway-info">
-                    <strong>Runway:</strong> 18 months to Series A ($300K ARR target)
-                </div>
-            </div>
-        </section>
-
-        <!-- Impact Section -->
-        <section id="impact" class="section">
-            <div class="container">
-                <h2 class="section-title">Impact Thesis</h2>
-                <div class="impact-content">
-                    <blockquote class="impact-quote">
-                        "Tactile Horizons AI addresses a critical equity gap in STEM education. By automating tactile graphics production, we enable blind and low-vision students to access the same learning materials as their sighted peers—at scale, at cost, and on demand."
-                    </blockquote>
-                    <div class="vision-box">
-                        <h3>Our Vision</h3>
-                        <p>Become the <strong>infrastructure layer for accessible STEM content</strong>—the API every LMS, publisher, and government portal uses to make visual information tactile.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-card">
-                    <div class="contact-info">
-                        <h3>Ibrahim Al-Jallad</h3>
-                        <p class="contact-title">Founder & CEO, Tactile Horizons AI</p>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                                <span>Contact via email</span>
-                            </div>
-                            <div class="contact-item">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
-                                </svg>
-                                <span>Mississauga, Ontario, Canada</span>
-                            </div>
-                        </div>
-                        <p class="incorporation-note">Delaware C-Corp (in progress)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="braille-text" aria-hidden="true">⠞⠁⠉⠞⠊⠇⠑</span>
-                    <span>Tactile Horizons AI</span>
-                </div>
-                <p class="footer-tagline">Making STEM accessible for everyone.</p>
-                <p class="footer-version">Document Version 1.0 | February 2026</p>
+            <div class="card stat-box">
+                <div class="stat-number">$33 Billion</div>
+                <p>Annual cost of vision loss in Canada (Deloitte, 2021)</p>
             </div>
         </div>
-    </footer>
+        <div style="margin-top: 2rem;">
+            <p><strong>The Gap:</strong> Schools and publishers face regulatory deadlines (ADA Title II WCAG 2.1 AA compliance by April 2026) without scalable solutions. Manual production cannot meet demand. AI can.</p>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Solution Section -->
+    <section class="section">
+        <h2>The Solution</h2>
+        <p>Our three-step automation process ensures high fidelity and speed:</p>
+        <ol>
+            <li><strong>AI Interpretation:</strong> Computer vision isolates STEM-relevant features using fine-tuned multimodal models.</li>
+            <li><strong>Intelligent Simplification:</strong> Removes visual clutter while preserving semantic meaning (80% accuracy for standard charts).</li>
+            <li><strong>Tactile Optimization:</strong> Outputs variable-height emboss files calibrated for fingertip discrimination.</li>
+        </ol>
+        <p><strong>Delivery:</strong> Cloud API + SaaS dashboard. We integrate with existing Learning Management Systems (Canvas, Blackboard) and embosser hardware (ViewPlus, Index).</p>
+    </section>
 
-<script>
-/**
- * Iframe 元素高亮注入脚本
- * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
- *
- * 使用方法：
- * 1. 将此脚本添加到目标网站的 HTML 中
- * 2. 或通过浏览器扩展、用户脚本等方式注入
- */
+    <!-- Comparison Table -->
+    <section class="section">
+        <h2>Competitive Advantage</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Manual Artists</th>
+                    <th>Traditional Software</th>
+                    <th>Tactile Horizons AI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Turnaround</td>
+                    <td>2-4 Weeks</td>
+                    <td>3-5 Days</td>
+                    <td><strong>90 Seconds</strong></td>
+                </tr>
+                <tr>
+                    <td>Cost Per Image</td>
+                    <td>$50 - $200</td>
+                    <td>$25 + Hardware</td>
+                    <td><strong>~$5</strong></td>
+                </tr>
+                <tr>
+                    <td>Scalability</td>
+                    <td>Low</td>
+                    <td>Medium</td>
+                    <td><strong>Infinite (API)</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-(function () {
-  "use strict";
+    <!-- Impact & Traction -->
+    <section class="section">
+        <h2>Impact & Validation</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Learning Outcomes</h3>
+                <p>76.6% comprehension rate vs. 70.1% verbal-only (independent validation). Peer-reviewed studies show tactile graphics improve STEM learning outcomes and enable data literacy.</p>
+            </div>
+            <div class="card">
+                <h3>Recognition</h3>
+                <p>Invited to showcase at the "Realizing America's Promise, the 2026 Conference and Expo" hosted by National Industries for the Blind (NIB).</p>
+            </div>
+            <div class="card">
+                <h3>Partnerships</h3>
+                <p>Productive discussions with the American Printing House (APH). Advisory commitments from accessibility researchers and AI scientists.</p>
+            </div>
+        </div>
+    </section>
 
-  // 检查是否在 iframe 中
-  if (window.self === window.top) {
-    return; // 不在 iframe 中，不执行
-  }
+    <!-- Business Model -->
+    <section class="section">
+        <h2>Business Model</h2>
+        <p>We offer flexible pricing to accommodate institutions and publishers:</p>
+        <ul>
+            <li><strong>API Pay-per-Use:</strong> $0.15/page (Target: Publishers, LMS platforms)</li>
+            <li><strong>Institutional License:</strong> $2,999/year unlimited (Target: K-12 districts, universities)</li>
+            <li><strong>Tactile Horizons Magazine:</strong> $180/year institutional subscription</li>
+        </ul>
+    </section>
 
-  // 检查是否已经初始化过
-  if (window.__iframeHighlightInitialized) {
-    return;
-  }
-  window.__iframeHighlightInitialized = true;
-  console.log("Iframe 高亮脚本已加载");
+    <!-- Roadmap -->
+    <section class="section">
+        <h2>Roadmap</h2>
+        <ul>
+            <li><strong>2026:</strong> MVP Launch, 3 Paid Pilots, Ontario K-12 Pilot Program.</li>
+            <li><strong>2027:</strong> 20 Institutional Customers, Canada & US Expansion, State DOE Partnerships.</li>
+            <li><strong>2028:</strong> Break-even, Publisher API Integrations, 10M Images Processed.</li>
+        </ul>
+    </section>
+</div>
 
-  // 创建高亮覆盖层
-  var overlay = document.createElement("div");
-  overlay.id = "iframe-highlight-overlay";
-  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
+<footer>
+    <div class="container">
+        <h3>Contact</h3>
+        <p><strong>Ibrahim Al-Jallad</strong><br>Founder & CEO</p>
+        <p>📧 <a href="mailto:Jallad.ibrahim@proton.me" style="color: #3498db;">Jallad.ibrahim@proton.me</a><br>
+        📱 647-628-1316</p>
+        <p style="font-size: 0.8rem; margin-top: 2rem;">
+            Ontario Canada Corporation 002663316 | Business Number 727690885<br>
+            Tactile Horizons Magazine Copyright 1229076<br>
+            &copy; 2024 Tactile Horizons AI. All Rights Reserved.
+        </p>
+    </div>
+</footer>
 
-  // 创建悬停高亮框（虚线边框）
-  var highlightBox = document.createElement("div");
-  highlightBox.id = "iframe-highlight-box";
-  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
-
-  // 创建选中节点的常驻高亮框（实线边框）
-  var selectedBox = document.createElement("div");
-  selectedBox.id = "iframe-selected-box";
-  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
-
-  // 创建悬停标签显示
-  var tagLabel = document.createElement("div");
-  tagLabel.id = "iframe-tag-label";
-  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
-
-  // 创建选中节点标签
-  var selectedLabel = document.createElement("div");
-  selectedLabel.id = "iframe-selected-label";
-  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
-  overlay.appendChild(highlightBox);
-  overlay.appendChild(selectedBox);
-  overlay.appendChild(tagLabel);
-  overlay.appendChild(selectedLabel);
-  document.body.appendChild(overlay);
-
-  // 存储当前选中的元素
-  var selectedElement = null;
-  var highlightEnabled = false;
-
-  // 更新选中元素的高亮显示
-  function updateSelectedHighlight(element) {
-    console.log("updateSelectedHighlight called with:", element);
-    if (!element) {
-      selectedBox.style.display = "none";
-      selectedLabel.style.display = "none";
-      selectedElement = null;
-      console.log("Cleared selected highlight");
-      return;
-    }
-    selectedElement = element;
-    var rect = element.getBoundingClientRect();
-    console.log("Selected element rect:", rect);
-
-    // 更新选中高亮框位置
-    selectedBox.style.display = "block";
-    selectedBox.style.left = "".concat(rect.left - 2, "px");
-    selectedBox.style.top = "".concat(rect.top - 2, "px");
-    selectedBox.style.width = "".concat(rect.width + 4, "px");
-    selectedBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新选中标签位置和内容
-    selectedLabel.style.display = "block";
-    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 28;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 5) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
-    if (labelLeft + labelWidth > window.innerWidth - 10) {
-      labelLeft = window.innerWidth - labelWidth - 10;
-    }
-    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
-    selectedLabel.style.top = "".concat(labelTop, "px");
-    console.log("Selected highlight positioned at:", {
-      left: selectedBox.style.left,
-      top: selectedBox.style.top,
-      width: selectedBox.style.width,
-      height: selectedBox.style.height
-    });
-  }
-  function getElementSelector(element) {
-    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
-    var segments = [];
-    var current = element;
-    while (current !== document.documentElement) {
-      var selector = '';
-      // 优先检查唯一ID
-      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
-        segments.unshift("#".concat(current.id));
-        break; // ID唯一，无需继续向上
-      }
-
-      // 生成类名选择器（取第一个有效类名）
-      var classes = Array.from(current.classList).filter(function (c) {
-        return !c.startsWith('js-');
-      });
-      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
-
-      // 生成位置索引（nth-child）
-      var tag = current.tagName.toLowerCase();
-      if (!className) {
-        var siblings = Array.from(current.parentNode.children);
-        var index = siblings.findIndex(function (el) {
-          return el === current;
-        }) + 1;
-        selector = "".concat(tag, ":nth-child(").concat(index, ")");
-      } else {
-        selector = className;
-      }
-      segments.unshift(selector);
-      current = current.parentElement;
-    }
-
-    // 处理根元素
-    if (current === document.documentElement) {
-      segments.unshift('html');
-    }
-    return segments.join(' > ');
-  }
-
-  // 获取元素文本内容
-  function getElementText(element) {
-    var _element$textContent;
-    if (element.tagName === "INPUT") {
-      return element.value || element.placeholder || "";
-    }
-    if (element.tagName === "TEXTAREA") {
-      return element.value || element.placeholder || "";
-    }
-    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
-    return text.length > 50 ? text.substring(0, 50) + "..." : text;
-  }
-
-  // 获取元素属性信息
-  function getElementAttributes(element) {
-    var attrs = {};
-    for (var i = 0; i < element.attributes.length; i++) {
-      var attr = element.attributes[i];
-      attrs[attr.name] = attr.value;
-    }
-    return attrs;
-  }
-
-  // 鼠标悬停事件处理
-  function handleMouseOver(e) {
-    if (!highlightEnabled) return;
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免高亮 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 如果是已选中的元素，不显示悬停高亮
-    if (target === selectedElement) {
-      highlightBox.style.display = "none";
-      tagLabel.style.display = "none";
-      return;
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-
-    // 更新悬停高亮框位置
-    highlightBox.style.display = "block";
-    highlightBox.style.left = "".concat(rect.left - 2, "px");
-    highlightBox.style.top = "".concat(rect.top - 2, "px");
-    highlightBox.style.width = "".concat(rect.width + 4, "px");
-    highlightBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新标签位置和内容
-    tagLabel.style.display = "block";
-    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 22;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 0) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
-      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
-    }
-    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
-    tagLabel.style.top = "".concat(labelTop, "px");
-
-    // 发送消息到父窗口
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 鼠标离开事件处理
-  function handleMouseOut(e) {
-    if (!highlightEnabled) return;
-    var relatedTarget = e.relatedTarget;
-
-    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
-    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
-      return;
-    }
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: null,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 点击事件处理
-  function handleClick(e) {
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免处理 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 检查是否是交互元素，这些元素需要保留默认行为
-    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
-
-    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
-    if (highlightEnabled) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-    console.log("Element clicked:", {
-      tagName: target.tagName,
-      selector: selector,
-      rect: rect
-    });
-
-    // 立即更新选中高亮
-    updateSelectedHighlight(target);
-
-    // 隐藏悬停高亮，因为现在是选中状态
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-click",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 监听来自父窗口的消息
-  function handleParentMessage(event) {
-    console.log("Received message from parent:", event.data);
-    if (event.data.type === "iframe-highlight-toggle") {
-      var enabled = event.data.enabled;
-      console.log("Highlight toggle:", enabled);
-      if (enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "enable-iframe-highlight") {
-      console.log("Enable iframe highlight");
-      enableHighlight();
-    } else if (event.data.type === "disable-iframe-highlight") {
-      console.log("Disable iframe highlight");
-      disableHighlight();
-    } else if (event.data.type === "toggle-iframe-highlight") {
-      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
-      console.log("Toggle iframe highlight to:", _enabled);
-      if (_enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "update-selected-element") {
-      var selector = event.data.selector;
-      console.log("Update selected element with selector:", selector);
-      if (selector) {
-        try {
-          var element = document.querySelector(selector);
-          console.log("Found element by selector:", element);
-          updateSelectedHighlight(element);
-        } catch (error) {
-          console.warn("Failed to select element:", error);
-          updateSelectedHighlight(null);
-        }
-      } else {
-        updateSelectedHighlight(null);
-      }
-    } else if (event.data.type === "clear-selected-element") {
-      console.log("Clear selected element");
-      updateSelectedHighlight(null);
-    }
-  }
-
-  // 启用高亮功能
-  function enableHighlight() {
-    console.log("Enabling highlight");
-    document.addEventListener("mouseover", handleMouseOver, true);
-    document.addEventListener("mouseout", handleMouseOut, true);
-    document.addEventListener("click", handleClick, true);
-    highlightEnabled = true;
-    overlay.style.display = "block";
-  }
-
-  // 禁用高亮功能
-  function disableHighlight() {
-    console.log("Disabling highlight");
-    highlightEnabled = false;
-    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
-    // 这样可以保留选中状态的显示
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
-  }
-
-  // 完全禁用高亮功能（移除所有监听器）
-  function fullyDisableHighlight() {
-    console.log("Fully disabling highlight");
-    highlightEnabled = false;
-    document.removeEventListener("mouseover", handleMouseOver, true);
-    document.removeEventListener("mouseout", handleMouseOut, true);
-    document.removeEventListener("click", handleClick, true);
-    overlay.style.display = "none";
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    selectedBox.style.display = "none";
-    selectedLabel.style.display = "none";
-  }
-
-  // 添加事件监听
-  enableHighlight();
-  window.addEventListener("message", handleParentMessage);
-
-  // 暴露全局函数供外部调用
-  window.__iframeHighlightControl = {
-    enable: enableHighlight,
-    disable: disableHighlight,
-    fullyDisable: fullyDisableHighlight,
-    isEnabled: function isEnabled() {
-      return highlightEnabled;
-    },
-    getSelectedElement: function getSelectedElement() {
-      return selectedElement;
-    },
-    updateSelected: updateSelectedHighlight,
-    // 通过消息发送开关控制
-    sendToggleMessage: function sendToggleMessage(enabled) {
-      window.parent.postMessage({
-        type: 'iframe-highlight-status',
-        enabled: enabled || highlightEnabled,
-        source: 'iframe-highlight-injector'
-      }, '*');
-    }
-  };
-
-  // 通知父窗口脚本已加载
-  try {
-    window.parent.postMessage({
-      type: "iframe-highlight-ready",
-      data: {
-        url: window.location.href,
-        userAgent: navigator.userAgent,
-        timestamp: Date.now()
-      },
-      source: "iframe-highlight-injector"
-    }, "*");
-  } catch (error) {
-    console.warn("无法发送就绪消息到父窗口:", error);
-  }
-
-  // 清理函数
-  window.__iframeHighlightCleanup = function () {
-    fullyDisableHighlight();
-    window.removeEventListener("message", handleParentMessage);
-    if (overlay.parentElement) {
-      overlay.parentElement.removeChild(overlay);
-    }
-    delete window.__iframeHighlightInitialized;
-    delete window.__iframeHighlightCleanup;
-  };
-})();
-
-</script>
 </body>
 </html>
