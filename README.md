@@ -1,63 +1,73 @@
-# Tactile Horizons AI Website
+# Welcome to your Lovable project
 
-A professional marketing website for Tactile Horizons AI - an AI-powered STEM accessibility solution for blind and low-vision learners.
+## Project info
 
-## Overview
+**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
-This website showcases the Tactile Horizons AI platform, which transforms visual STEM content into optimized tactile graphics in 90 seconds.
+## How can I edit this code?
 
-## Features
+There are several ways of editing your application.
 
-- Fully responsive design
-- High accessibility standards (WCAG 2.1 compliant)
-- Clean, professional typography
-- Interactive elements with smooth animations
-- Mobile-friendly navigation
+**Use Lovable**
 
-## Deployment to GitHub Pages
+Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
-### Option 1: Manual Deployment
+Changes made via Lovable will be committed automatically to this repo.
 
-1. Create a new repository on GitHub
-2. Push this code to the repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/tactile-horizons-ai.git
-   git push -u origin main
-   ```
-3. Go to repository Settings > Pages
-4. Select "Deploy from a branch"
-5. Choose "main" branch and "/ (root)" folder
-6. Click Save
+**Use your preferred IDE**
 
-### Option 2: GitHub Actions
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The website will automatically deploy when pushed to the main branch.
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-## File Structure
+Follow these steps:
 
-```
-tactile-horizons-website/
-├── index.html      # Main HTML file
-├── styles.css      # CSS styles
-├── script.js       # JavaScript functionality
-└── README.md       # This file
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
 
-## Design Specifications
+**Edit a file directly in GitHub**
 
-- **Color Palette**: Deep blue (#1e40af), white, accent green (#059669)
-- **Typography**: Inter (Google Fonts)
-- **Target**: High contrast for accessibility alignment
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-## Contact
+**Use GitHub Codespaces**
 
-Tactile Horizons AI
-Mississauga, Ontario, Canada
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
----
+## What technologies are used for this project?
 
-Document Version 1.0 | February 2026
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
