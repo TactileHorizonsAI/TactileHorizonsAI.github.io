@@ -1,73 +1,83 @@
-# Welcome to your Lovable project
+# Tactile Horizons AI
 
-## Project info
+![Tactile Horizons AI](https://img.shields.io/badge/Accessibility-STEM-blue)
+![License](https://img.shields.io/badge/License-Proprietary-red)
+![Status](https://img.shields.io/badge/Status-In%20Development-orange)
 
-**URL**: https://tactilehorizonsai.github.io/
+**AI-Powered STEM Accessibility for Blind & Low-Vision Learners**
 
-## How can I edit this code?
+Tactile Horizons AI transforms visual STEM content—graphs, molecular structures, geometric diagrams—into optimized tactile graphics in **90 seconds**, compared to 2-4 weeks for manual production. We are the API-first layer that makes digital learning platforms instantly accessible.
 
-There are several ways of editing your application.
+## 📖 The Problem
 
-**Use Lovable**
+- **1.3 billion** people live with vision impairment globally (WHO).
+- **90%** of STEM content is visual (charts, diagrams, data visualizations).
+- **$33 Billion** annual cost of vision loss in Canada (Deloitte, 2021).
+- **Current tactile graphics** cost $50-$200 per image with 2-4 week turnaround.
+- **Regulatory Pressure:** ADA Title II mandates WCAG 2.1 AA compliance by April 2026.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🚀 The Solution
 
-Changes made via Lovable will be committed automatically to this repo.
+Our three-step automation process ensures high fidelity and speed:
 
-**Use your preferred IDE**
+1.  **AI Interpretation:** Computer vision isolates STEM-relevant features using fine-tuned multimodal models.
+2.  **Intelligent Simplification:** Removes visual clutter while preserving semantic meaning (80% accuracy for standard charts).
+3.  **Tactile Optimization:** Outputs variable-height emboss files calibrated for fingertip discrimination.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Delivery
+- **Cloud API + SaaS Dashboard**
+- Integrates with LMS (Canvas, Blackboard)
+- Compatible with embosser hardware (ViewPlus, Index)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📊 Market & Impact
 
-Follow these steps:
+| Market Layer | Verified Size | Growth Rate |
+| :--- | :--- | :--- |
+| **TAM:** Assistive Technology (Visual Impairment) | $3.91B (2024) | 13.8% CAGR |
+| **SAM:** Education Tactile Graphics | $600M | 2026-2027 |
+| **SOM:** 5% Market Capture | $30M | Year 3 |
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Impact Metrics
+- **76.6%** comprehension rate vs. 70.1% verbal-only (independent validation).
+- **Braille readers** earn $11,000 more annually than non-readers (NFB Employment Survey).
+- **Goal:** Process 10M images by 2028 (equivalent to entire K-12 US textbook catalog).
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🛠 Technology Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Computer Vision:** Fine-tuned multimodal models for diagram isolation.
+- **Cloud Infrastructure:** AWS/GCP for scalable API delivery.
+- **Compliance:** SOC 2 compliance prep, AODA compliance audit.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📅 Roadmap
 
-**Edit a file directly in GitHub**
+- **2026:** MVP Launch, 3 Paid Pilots, Ontario K-12 Pilot Program.
+- **2027:** 20 Institutional Customers, Canada & US Expansion.
+- **2028:** Break-even, Publisher API Integrations.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🤝 Traction & Validation
 
-**Use GitHub Codespaces**
+- Invited to showcase at the **"Realizing America's Promise, the 2026 Conference and Expo"** (NIB & NAEPB).
+- Participated in a study conducted by **Harvard University and the University of Toronto** on social entrepreneurship.
+- Productive discussions with the **American Printing House (APH)**.
+- Advisory commitments from accessibility researchers and AI Scientists.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 💼 Business Model
 
-## What technologies are used for this project?
+- **API Pay-per-Use:** $0.15/page (Publishers, LMS platforms)
+- **Institutional License:** $2,999/year unlimited (K-12 districts, universities)
+- **Professional Services:** $150/hour consulting (Complex custom content)
+- **Tactile Horizons Magazine:** $180/year institutional subscription
 
-This project is built with:
+## 📞 Contact
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+**Ibrahim Al-Jallad**  
+Founder & CEO, Tactile Horizons AI
 
-## How can I deploy this project?
+- **Email:** [Jallad.ibrahim@proton.me](mailto:Jallad.ibrahim@proton.me)
+- **Phone:** 647-628-1316
+- **Location:** Ontario, Canada
+- **Corp Info:** Ontario Canada Corporation 002663316 | Business Number 727690885
+- **Magazine Copyright:** 1229076
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+*Visit our GitHub Pages site: [http://tactilehorizonsai.github.io](http://tactilehorizonsai.github.io)*

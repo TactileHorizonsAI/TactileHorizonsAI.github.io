@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tactile Horizons AI | STEM Accessibility</title>
-    <meta name="description" content="AI-Powered STEM Accessibility for Blind & Low-Vision Learners. Transforming visual content into optimized tactile graphics in 90 seconds.">
+    <title>Tactile Horizons AI | Workforce Equity & Accessibility</title>
+    <meta name="description" content="AI-Powered Tactile Graphics for Workforce Equity. Transforming technical publications into accessible tactile experiences for the visually impaired.">
     <style>
         :root {
-            --primary: #2c3e50;
-            --accent: #3498db;
-            --light: #ecf0f1;
-            --dark: #1a252f;
+            --primary: #003366; /* Deep Blue for Trust */
+            --accent: #00A8E1; /* Bright Blue for Action */
+            --light: #f4f4f4;
+            --dark: #1a1a1a;
             --text: #333;
             --white: #ffffff;
+            --warning: #d9534f;
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,11 +21,17 @@
             color: var(--text);
             margin: 0;
             padding: 0;
+            background-color: var(--white);
+        }
+        /* Accessibility Focus Styles */
+        a:focus, button:focus {
+            outline: 3px solid var(--accent);
+            outline-offset: 2px;
         }
         header {
-            background: var(--dark);
+            background: var(--primary);
             color: var(--white);
-            padding: 2rem 0;
+            padding: 3rem 0;
             text-align: center;
         }
         .container {
@@ -35,31 +42,37 @@
         }
         h1, h2, h3 {
             color: var(--primary);
+            line-height: 1.2;
         }
         header h1 {
             color: var(--white);
             margin: 0;
             font-size: 2.5rem;
         }
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+        header .braille {
+            font-family: monospace;
+            letter-spacing: 3px;
+            display: block;
+            margin: 1rem 0;
+            opacity: 0.8;
         }
         .btn {
             display: inline-block;
             background: var(--accent);
             color: var(--white);
-            padding: 0.8rem 1.5rem;
+            padding: 1rem 2rem;
             text-decoration: none;
             border-radius: 5px;
             margin-top: 1rem;
             font-weight: bold;
+            border: 2px solid var(--accent);
         }
         .btn:hover {
-            background: #2980b9;
+            background: var(--white);
+            color: var(--accent);
         }
         .section {
-            padding: 3rem 0;
+            padding: 4rem 0;
             border-bottom: 1px solid #ddd;
         }
         .grid {
@@ -70,18 +83,22 @@
         }
         .card {
             background: var(--light);
-            padding: 1.5rem;
+            padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--accent);
         }
         .stat-box {
             text-align: center;
-            padding: 1rem;
+            padding: 1.5rem;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 8px;
         }
         .stat-number {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: bold;
             color: var(--accent);
+            display: block;
         }
         table {
             width: 100%;
@@ -97,17 +114,21 @@
             background-color: var(--primary);
             color: var(--white);
         }
+        .highlight {
+            background-color: #e8f4f8;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
         footer {
             background: var(--dark);
             color: var(--white);
             text-align: center;
-            padding: 2rem 0;
+            padding: 3rem 0;
             margin-top: 2rem;
         }
-        .braille {
-            font-family: monospace;
-            letter-spacing: 2px;
-            opacity: 0.7;
+        footer a {
+            color: var(--accent);
         }
         @media (max-width: 768px) {
             header h1 { font-size: 2rem; }
@@ -117,143 +138,157 @@
 </head>
 <body>
 
-<header>
+<header role="banner">
     <div class="container">
         <h1>Tactile Horizons AI</h1>
-        <p class="braille">⠞   ⠁   ⠉   ⠞   ⠊   ⠇   ⠑   ⠓   ⠕   ⠗   ⠊   ⠵   ⠕   ⠝   ⠎   ⠁   ⠊</p>
-        <p>AI-Powered STEM Accessibility for Blind & Low-Vision Learners</p>
-        <a href="mailto:Jallad.ibrahim@proton.me" class="btn">Contact Us</a>
+        <span class="braille" aria-label="Tactile Horizons AI in Braille">⠞   ⠁   ⠉   ⠞   ⠊   ⠇   ⠑   ⠓   ⠕   ⠗   ⠊   ⠵   ⠕   ⠝   ⠎   ⠁   ⠊</span>
+        <p>AI-Powered Tactile Graphics for Workforce Equity & Accessibility</p>
+        <a href="#contact" class="btn">Partner With Us</a>
     </div>
 </header>
 
-<div class="container">
-    <!-- Mission Section -->
-    <section class="section">
-        <h2>The Proposition</h2>
-        <p>Tactile Horizons AI transforms visual STEM content—graphs, molecular structures, geometric diagrams—into optimized tactile graphics in <strong>90 seconds</strong>, compared to 2-4 weeks for manual production. We are the API-first layer that makes digital learning platforms instantly accessible.</p>
-        <p><strong>Our Vision:</strong> Become the infrastructure layer for accessible STEM content. The API every LMS, publisher, and government portal uses to make visual information accessible.</p>
-    </section>
-
-    <!-- Problem Section -->
-    <section class="section">
-        <h2>The Problem</h2>
-        <div class="grid">
-            <div class="card stat-box">
-                <div class="stat-number">1.3 Billion</div>
-                <p>People live with vision impairment globally (WHO)</p>
-            </div>
-            <div class="card stat-box">
-                <div class="stat-number">90%</div>
-                <p>Of STEM content is visual (charts, diagrams, data)</p>
-            </div>
-            <div class="card stat-box">
-                <div class="stat-number">$33 Billion</div>
-                <p>Annual cost of vision loss in Canada (Deloitte, 2021)</p>
-            </div>
-        </div>
-        <div style="margin-top: 2rem;">
-            <p><strong>The Gap:</strong> Schools and publishers face regulatory deadlines (ADA Title II WCAG 2.1 AA compliance by April 2026) without scalable solutions. Manual production cannot meet demand. AI can.</p>
-        </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section class="section">
-        <h2>The Solution</h2>
-        <p>Our three-step automation process ensures high fidelity and speed:</p>
-        <ol>
-            <li><strong>AI Interpretation:</strong> Computer vision isolates STEM-relevant features using fine-tuned multimodal models.</li>
-            <li><strong>Intelligent Simplification:</strong> Removes visual clutter while preserving semantic meaning (80% accuracy for standard charts).</li>
-            <li><strong>Tactile Optimization:</strong> Outputs variable-height emboss files calibrated for fingertip discrimination.</li>
-        </ol>
-        <p><strong>Delivery:</strong> Cloud API + SaaS dashboard. We integrate with existing Learning Management Systems (Canvas, Blackboard) and embosser hardware (ViewPlus, Index).</p>
-    </section>
-
-    <!-- Comparison Table -->
-    <section class="section">
-        <h2>Competitive Advantage</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th>Manual Artists</th>
-                    <th>Traditional Software</th>
-                    <th>Tactile Horizons AI</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Turnaround</td>
-                    <td>2-4 Weeks</td>
-                    <td>3-5 Days</td>
-                    <td><strong>90 Seconds</strong></td>
-                </tr>
-                <tr>
-                    <td>Cost Per Image</td>
-                    <td>$50 - $200</td>
-                    <td>$25 + Hardware</td>
-                    <td><strong>~$5</strong></td>
-                </tr>
-                <tr>
-                    <td>Scalability</td>
-                    <td>Low</td>
-                    <td>Medium</td>
-                    <td><strong>Infinite (API)</strong></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <!-- Impact & Traction -->
-    <section class="section">
-        <h2>Impact & Validation</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Learning Outcomes</h3>
-                <p>76.6% comprehension rate vs. 70.1% verbal-only (independent validation). Peer-reviewed studies show tactile graphics improve STEM learning outcomes and enable data literacy.</p>
-            </div>
-            <div class="card">
-                <h3>Recognition</h3>
-                <p>Invited to showcase at the "Realizing America's Promise, the 2026 Conference and Expo" hosted by National Industries for the Blind (NIB).</p>
-            </div>
-            <div class="card">
-                <h3>Partnerships</h3>
-                <p>Productive discussions with the American Printing House (APH). Advisory commitments from accessibility researchers and AI scientists.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Business Model -->
-    <section class="section">
-        <h2>Business Model</h2>
-        <p>We offer flexible pricing to accommodate institutions and publishers:</p>
-        <ul>
-            <li><strong>API Pay-per-Use:</strong> $0.15/page (Target: Publishers, LMS platforms)</li>
-            <li><strong>Institutional License:</strong> $2,999/year unlimited (Target: K-12 districts, universities)</li>
-            <li><strong>Tactile Horizons Magazine:</strong> $180/year institutional subscription</li>
-        </ul>
-    </section>
-
-    <!-- Roadmap -->
-    <section class="section">
-        <h2>Roadmap</h2>
-        <ul>
-            <li><strong>2026:</strong> MVP Launch, 3 Paid Pilots, Ontario K-12 Pilot Program.</li>
-            <li><strong>2027:</strong> 20 Institutional Customers, Canada & US Expansion, State DOE Partnerships.</li>
-            <li><strong>2028:</strong> Break-even, Publisher API Integrations, 10M Images Processed.</li>
-        </ul>
-    </section>
-</div>
-
-<footer>
+<main role="main">
     <div class="container">
-        <h3>Contact</h3>
+        <!-- Mission Section -->
+        <section class="section" id="mission">
+            <h2>Our Mission</h2>
+            <p class="highlight">
+                <strong>Touch the Future.</strong> We are dedicated to transforming how visually impaired individuals access technical, educational, and instructional content. 
+                Our patent-pending AI engine converts digital images into intelligent tactile graphics, making complex visual information accessible through touch.
+            </p>
+            <p>We are changing the story for the <strong>1.2 million Canadians</strong> living with vision loss. By removing barriers, we open doors to dignity, independence, and possibility. Talent is universal; opportunity should be too.</p>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="section" id="problem">
+            <h2>The Challenge</h2>
+            <div class="grid">
+                <div class="stat-box">
+                    <span class="stat-number">$32.9B</span>
+                    <p>Annual cost of vision loss in Canada (Deloitte, 2021)</p>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">59%</span>
+                    <p>Employment rate for Canadians with disabilities vs. 80% without</p>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">90%</span>
+                    <p>Of STEM content is visual (charts, diagrams, data)</p>
+                </div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <p><strong>The Workforce Gap:</strong> While 80% of Canadians without disabilities find employment, only 59% of those with disabilities do. This 21-point gap represents hundreds of thousands of untapped talents. Our technology addresses the <strong>$4.3 billion lost to productivity</strong> annually by enabling independent performance in technical roles.</p>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="section" id="solution">
+            <h2>The Solution</h2>
+            <p>Tactile Horizons AI operates as a specialized service provider partnering with governments and businesses to convert technical publications into accessible tactile formats.</p>
+            <h3>3-Step Automation Process</h3>
+            <ol>
+                <li><strong>AI Interpretation:</strong> Computer vision isolates shapes, trends, and color gradients using our patent-pending algorithm.</li>
+                <li><strong>Intelligent Simplification:</strong> Removes visual clutter while preserving core semantic meaning.</li>
+                <li><strong>Tactile Rendering:</strong> Outputs variable-height emboss files calibrated for optimal fingertip discrimination.</li>
+            </ol>
+            <p><strong>Performance:</strong> 90-second turnaround vs. 2-4 weeks for manual production. 90% cost reduction.</p>
+        </section>
+
+        <!-- Market & Strategy -->
+        <section class="section" id="market">
+            <h2>Market & Strategy</h2>
+            <p><strong>Target Sectors:</strong> We focus on federally regulated sectors with high concentrations of visual data:</p>
+            <ul>
+                <li><strong>Communications:</strong> Telecommunications and IT.</li>
+                <li><strong>Financial Services:</strong> Banking, insurance, and investment reports.</li>
+                <li><strong>Federal Crown Corporations:</strong> Public service delivery and policy analysis.</li>
+            </ul>
+            <h3>Go-to-Market Roadmap</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Phase</th>
+                        <th>Timeline</th>
+                        <th>Focus</th>
+                        <th>Target</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Phase 1</td>
+                        <td>Q1-Q2 2026</td>
+                        <td>Ontario Pilot</td>
+                        <td>20 Institutions</td>
+                    </tr>
+                    <tr>
+                        <td>Phase 2</td>
+                        <td>Q3-Q4 2026</td>
+                        <td>Scale Canada</td>
+                        <td>300 Institutions (QC, BC, AB)</td>
+                    </tr>
+                    <tr>
+                        <td>Phase 3</td>
+                        <td>2027</td>
+                        <td>Enterprise & Federal</td>
+                        <td>800+ Institutions, Federal Contracts</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Business Model -->
+        <section class="section" id="business">
+            <h2>Business Model</h2>
+            <p>We offer flexible pricing to accommodate institutions, publishers, and government agencies:</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Project-Based</h3>
+                    <p>One-time conversion of publications.</p>
+                    <p><strong>$5-$15/page</strong></p>
+                </div>
+                <div class="card">
+                    <h3>Annual Service</h3>
+                    <p>Ongoing conversion services for departments.</p>
+                    <p><strong>$15K-$50K/year</strong></p>
+                </div>
+                <div class="card">
+                    <h3>Enterprise License</h3>
+                    <p>Unlimited institutional access.</p>
+                    <p><strong>$50K-$150K/year</strong></p>
+                </div>
+                <div class="card">
+                    <h3>API Licensing</h3>
+                    <p>Integration with client document systems.</p>
+                    <p><strong>$25K-$100K/year</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="section" id="partners">
+            <h2>Partners & Validation</h2>
+            <p>Our success hinges on a carefully orchestrated partnership ecosystem:</p>
+            <ul>
+                <li><strong>National Industries for the Blind (NIB):</strong> Lived experience advisors and accessibility experts.</li>
+                <li><strong>University of Toronto / Harvard University:</strong> Research methodology and evaluation framework.</li>
+                <li><strong>ViewPlus Technologies:</strong> Hardware support and technical integration.</li>
+                <li><strong>Government Stakeholders:</strong> Discussions with Canadian Members of Parliament and Provincial Ministries.</li>
+            </ul>
+            <p><strong>Validation:</strong> Invited to showcase at the "Realizing America's Promise, the 2026 Conference and Expo" (NIB & NAEPB).</p>
+        </section>
+    </div>
+</main>
+
+<footer id="contact" role="contentinfo">
+    <div class="container">
+        <h2>Contact Us</h2>
         <p><strong>Ibrahim Al-Jallad</strong><br>Founder & CEO</p>
-        <p>📧 <a href="mailto:Jallad.ibrahim@proton.me" style="color: #3498db;">Jallad.ibrahim@proton.me</a><br>
+        <p>📧 <a href="mailto:Jallad.ibrahim@proton.me">Jallad.ibrahim@proton.me</a><br>
         📱 647-628-1316</p>
-        <p style="font-size: 0.8rem; margin-top: 2rem;">
+        <p style="font-size: 0.9rem; margin-top: 2rem; opacity: 0.8;">
             Ontario Canada Corporation 002663316 | Business Number 727690885<br>
             Tactile Horizons Magazine Copyright 1229076<br>
-            &copy; 2024 Tactile Horizons AI. All Rights Reserved.
+            &copy; 2026 Tactile Horizons AI. All Rights Reserved.
         </p>
     </div>
 </footer>
