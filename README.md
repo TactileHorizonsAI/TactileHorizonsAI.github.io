@@ -19,6 +19,13 @@ Tactile Horizons AI is an **API-first layer** that transforms visual STEM conten
 *   **Integration:** Seamlessly embeds into existing Learning Management Systems (Canvas, Blackboard) and embosser hardware (ViewPlus, Index).
 *   **Efficiency:** Reduces cost to **~$5 per image** with on-demand delivery.
 
+## 🛡 Intellectual Property
+**Patent Classification Search: Novel and Inventive**
+*   **Content Delivery System:** Introduces a system beyond simple generation methods.
+*   **Perception Modeling:** Uses AI to tailor tactile graphics based on learned user perception (not disclosed in previous patents).
+*   **Hybrid Architecture:** Combines rule-based systems with deep-learning perception models trained on how blind users process tactile information.
+*   **Scale:** Focused on mass communication and education, not just individual adaptation.
+
 ## 📊 Market Opportunity
 *   **TAM:** $3.91B (Global Assistive Technology for Visual Impairment).
 *   **SAM:** $600M (Education Tactile Graphics).
@@ -27,8 +34,8 @@ Tactile Horizons AI is an **API-first layer** that transforms visual STEM conten
 ## 🏆 Traction & Validation
 *   **Efficacy:** **76.6% comprehension rate** vs. 70.1% verbal-only (independently validated).
 *   **Partnerships:** Invited to showcase at **National Industries for the Blind (NIB) 2026 Conference**.
-*   **Research:** Study participant with **Harvard University & University of Toronto**.
 *   **Industry:** Productive discussions with **American Printing House (APH)**.
+*   **Advisors:** Commitments secured from accessibility researchers and AI scientists.
 
 ## 🛣 Roadmap
 *   **2026:** MVP Launch, 3 Paid Pilots, WCAG Audit ($85K Revenue).
