@@ -1,61 +1,66 @@
 # ⠞ ⠁ ⠉ ⠞ ⠊ ⠇ ⠑ ⠓ ⠕ ⠗ ⠊ ⠵ ⠕ ⠝ ⠎ ⠁ ⠊
 # Tactile Horizons AI
 
-> **AI-Powered STEM Accessibility for Blind & Low-Vision Learners**  
-> Transforming Visual Content into Touchable Insights in 90 Seconds.
+> **Transforming Visual Content into Touchable Insights in 90 Seconds**  
+> *AI-Powered STEM Accessibility for Blind & Low-Vision Learners*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status](https://img.shields.io/badge/Status-Seed%20Stage-blue)](https://tactilehorizonsai.github.io/)
-
-## 🚀 The Problem
-**90% of STEM content is visual**, excluding blind and low-vision learners from critical education and employment opportunities. Current solutions are broken:
-*   **Operational Bottleneck:** Manual tactile graphic production takes **2–4 weeks** per image.
-*   **Prohibitive Cost:** Manual production costs **$50–$200 per image**, draining special education budgets.
-*   **Regulatory Risk:** **ADA Title II mandates WCAG 2.1 AA compliance by April 2026**. Schools and publishers face legal liability without scalable solutions.
-
-## 💡 The Solution
-Tactile Horizons AI is an **API-first layer** that transforms visual STEM content (graphs, molecular structures, diagrams) into optimized tactile graphics in **90 seconds**.
-*   **Automation:** Three-step AI process (Interpretation, Simplification, Tactile Optimization) delivers **80% accuracy** on standard charts.
-*   **Integration:** Seamlessly embeds into existing Learning Management Systems (Canvas, Blackboard) and embosser hardware (ViewPlus, Index).
-*   **Efficiency:** Reduces cost to **~$5 per image** with on-demand delivery.
-
-## 🛡 Intellectual Property
-**Patent Classification Search: Novel and Inventive**
-*   **Content Delivery System:** Introduces a system beyond simple generation methods.
-*   **Perception Modeling:** Uses AI to tailor tactile graphics based on learned user perception (not disclosed in previous patents).
-*   **Hybrid Architecture:** Combines rule-based systems with deep-learning perception models trained on how blind users process tactile information.
-*   **Scale:** Focused on mass communication and education, not just individual adaptation.
-
-## 📊 Market Opportunity
-*   **TAM:** $3.91B (Global Assistive Technology for Visual Impairment).
-*   **SAM:** $600M (Education Tactile Graphics).
-*   **Catalyst:** **$14.2B annually** in US IDEA federal funding available for special education compliance.
-
-## 🏆 Traction & Validation
-*   **Efficacy:** **76.6% comprehension rate** vs. 70.1% verbal-only (independently validated).
-*   **Partnerships:** Invited to showcase at **National Industries for the Blind (NIB) 2026 Conference**.
-*   **Industry:** Productive discussions with **American Printing House (APH)**.
-*   **Advisors:** Commitments secured from accessibility researchers and AI scientists.
-
-## 🛣 Roadmap
-*   **2026:** MVP Launch, 3 Paid Pilots, WCAG Audit ($85K Revenue).
-*   **2027:** 20 Institutional Customers, Canada & US Expansion ($320K Revenue).
-*   **2028:** Publisher API Integrations, Break-even ($850K Revenue).
-
-## 🤝 Investment Ask
-**Seeking $500K CAD Seed Round** on $2M pre-money SAFE.
-*   **Use of Funds:** AI/ML Engineering, Cloud Infrastructure, Sales & Partnerships.
-*   **Goal:** Series A Ready in 18 Months — $300K ARR Target.
-
-## 📞 Contact
-**Ibrahim Al-Jallad**, Founder & CEO  
-📧 [Jallad.ibrahim@proton.me](mailto:Jallad.ibrahim@proton.me)  
-📱 +1 (647) 628-1316  
-🌐 [https://tactilehorizonsai.github.io/](https://tactilehorizonsai.github.io/)  
-
-**Corporate Info:**  
-Tkarm Inc. (Ontario Corp #002663316 | BN 727690885)  
-Tactile Horizons Magazine © 2025, Canadian Copyright #1229076
+[![Status](https://img.shields.io/badge/Status-Production%20Ready-blue)](https://tactilehorizonsai.github.io/)
+[![Compliance](https://img.shields.io/badge/WCAG-2.1%20AA-green)](https://tactilehorizonsai.github.io/)
+[![Accuracy](https://img.shields.io/badge/Accuracy-80%25-orange)](https://tactilehorizonsai.github.io/)
 
 ---
-*Making STEM Accessible. At Scale. On Demand.*
+
+## 🚀 The Mission
+
+**90% of STEM content is visual.** For 1.3 billion people living with vision impairment worldwide, this creates an insurmountable barrier to education and employment. Tactile Horizons AI dismantles this barrier—turning graphs, molecular structures, and diagrams into optimized tactile graphics in **90 seconds at ~$5 per image**.
+
+---
+
+## ⚡ The Breakthrough
+
+| Before | After |
+|--------|-------|
+| 2-4 weeks turnaround | **90 seconds** |
+| $50-$200 per image | **~$5 per image** |
+| Manual artists required | **Fully automated API** |
+| Limited scalability | **Unlimited on-demand** |
+
+---
+
+## 🛡 Intellectual Property
+
+**Patent Classification Search: Novel and Inventive**
+
+- **Content Delivery System:** Beyond simple generation methods
+- **Perception Modeling:** AI tailors graphics based on learned user perception
+- **Hybrid Architecture:** Rule-based + deep-learning perception models
+- **Scale Focus:** Mass communication and education, not individual adaptation
+
+---
+
+## 📊 Validated Impact
+
+- ✅ **76.6% Comprehension Rate** vs. 70.1% verbal-only (independently validated)
+- ✅ **NIB 2026 Conference** Invited showcase partner
+- ✅ **American Printing House** Active deployment discussions
+- ✅ **Harvard & UofT** Social entrepreneurship research participant
+- ✅ **Advisory Board** Accessibility researchers + AI scientists
+
+---
+
+## 🎯 Market Opportunity
+
+| Layer | Size | Timeline |
+|-------|------|----------|
+| **TAM** | $3.91B (Assistive Technology) | Now |
+| **SAM** | $600M (Education Tactile Graphics) | 2026-2027 |
+| **SOM** | $30M (5% Market Capture) | Year 3 |
+
+**Growth Catalysts:**
+- 📋 ADA Title II mandates WCAG 2.1 AA compliance by **April 2026**
+- 💰 $14.2B annual IDEA federal funding for special education
+- 🌍 UN Convention on Rights of Persons with Disabilities (179 signatories)
+
+---
+
+## 🏗 Solution Architecture
