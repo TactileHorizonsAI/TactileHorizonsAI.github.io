@@ -1,66 +1,23 @@
 # Tactile Horizons AI — Website
 
-Static marketing site for https://tactilehorizonsai.github.io/
+Static website for **Tactile Horizons AI**, ready for GitHub Pages.
 
-## Deploy to GitHub Pages (Step-by-Step)
+Contact: [Contact_Tactile_Horizons_AI@pm.me](mailto:Contact_Tactile_Horizons_AI@pm.me)
 
-### Option A — New repo (first time)
+## Publish on GitHub Pages
 
-1. Create a new GitHub repository named exactly: `tactilehorizonsai.github.io`
-   - Go to https://github.com/new
-   - Owner: `tactilehorizonsai`
-   - Repository name: `tactilehorizonsai.github.io`
-   - Visibility: Public
-   - Do NOT initialize with README
+1. Create a repository on GitHub (any name, e.g. `tactile-horizons-ai`, or `<username>.github.io`).
+2. Upload **all files and folders in this directory** to the root of the repository — including the hidden `.nojekyll` file and the `_next/` folder.
+3. In the repository go to **Settings → Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then **Save**.
+5. After 1–2 minutes the site is live at `https://<username>.github.io/<repository>/`.
 
-2. Push this project to that repo:
-```bash
-cd tactile_horizons_site
-git remote add origin https://github.com/tactilehorizonsai/tactilehorizonsai.github.io.git
-git branch -M main
-git push -u origin main
-```
+> Important: the `.nojekyll` file must be present, otherwise GitHub Pages hides the `_next/` folder and the site will appear unstyled.
 
-3. Enable GitHub Pages:
-   - Go to repo Settings → Pages
-   - Source: Deploy from a branch
-   - Branch: `main` / `/ (root)`
-   - Click Save
+## Contents
 
-4. Wait 1-2 minutes. Site will be live at https://tactilehorizonsai.github.io/
-
-### Option B — Existing repo
-
-If you already have the repo:
-```bash
-cd tactile_horizons_site
-git remote set-url origin https://github.com/tactilehorizonsai/tactilehorizonsai.github.io.git
-git branch -M main
-git push -f origin main
-```
-
-## Why .nojekyll?
-
-The `.nojekyll` file (empty, at root) tells GitHub Pages to serve files as pure static HTML — no Jekyll build step. This is required for this site to work correctly.
-
-## Local Preview
-
-```bash
-cd tactile_horizons_site
-python3 -m http.server 8080
-# Open http://localhost:8080
-```
-
-## Pages
-
-| Page | File | Description |
-|------|------|-------------|
-| Home | index.html | Hero, overview, stats |
-| Problem | problem.html | Scale of the problem |
-| Solution | solution.html | AI-powered solution |
-| Market | market.html | TAM/SAM/SOM + sources |
-| Validation | validation.html | Comprehension rates, partnerships |
-| Competitive | competitive.html | Competitor table + patent |
-| **The MVP** | **mvp.html** | **Tactile Horizon AIv2 app** |
-| Team | team.html | Founder bio |
-| Contact | contact.html | Contact details + form |
+- `index.html` — the website
+- `404.html` — page-not-found page
+- `_next/` — styles, scripts and fonts
+- `images/` — photography
+- `favicon.svg`, `og-image.png` — browser icon and social-sharing preview
